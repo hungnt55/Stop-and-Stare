@@ -85,10 +85,15 @@ This package offers a set of functions to use in order to find a seed set of giv
 Examples on a toy network: find seed set having 2 seed nodes on the graph network.txt:
 
 The sample network network.txt, in this case, contains only 4 nodes and 4 edges and is formated as follows:
+
 		4 4
+		
 		1 2 0.3
+		
 		2 3 0.5
+		
 		1 3 0.4
+		
 		1 4 0.2
 
 	1. Convert to binary file:
@@ -102,10 +107,10 @@ The sample network network.txt, in this case, contains only 4 nodes and 4 edges 
         The output after running SSA:
 
             Seed Nodes: 1 2 
-
-	Influence: 3.10
-	Time: 0s
-	Memory: 17.3008 MB
+            
+            Influence: 3.10
+            Time: 0s
+            Memory: 17.3008 MB
 
         Here, the selected seed set is {1;2} with the estimated influence of 3.10. SSA took 0 second to run and consumed 17.3008 MB of memory.
 
