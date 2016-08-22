@@ -29,7 +29,7 @@ This package offers a set of functions to use in order to find a seed set of giv
 
 0. (Optional) Computing edge weights (probabilities) as described in the experiments:
 
-	./format <input file> <output file> 1
+		./format <input file> <output file> 1
 
 	<input file>: the path to text file in edge list format with no weights: the first line contains the number of nodes n and number of edges m, each of the next m lines describes an edge following the format: <src> <dest>. Node index starts from 1.
 	<output file>: the path to text output file with edge probabilities
