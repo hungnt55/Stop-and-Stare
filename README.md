@@ -29,18 +29,18 @@ This package offers a set of functions to use in order to find a seed set of giv
 
 0. (Optional) Computing edge weights (probabilities) as described in the experiments:
 
-		./format <input file> <output file> 1
+        	./format <input file> <output file> 1
 
-       <input file>: the path to text file in edge list format with no weights: the first line contains the number of nodes n and number of edges m, each of the next m lines describes an edge following the format: <src> <dest>. Node index starts from 1.
-       <output file>: the path to text output file with edge probabilities.
-       1: the input graph is considered as directed.
+    	<input file>: the path to text file in weighted edge list format: the first line contains the number of nodes n and number of edges m, each of the next m lines describes an edge following the format: <src> <dest> <weight>. Node index starts from 1.
+    	<output file>: the path to text output file with edge probabilities.
+    	1: the input graph is considered as directed.
 
 1. Conversion from a text format to binary file
 
         	./el2bin <input file> <output file>
 
     	<input file>: the path to text file in weighted edge list format: the first line contains the number of nodes n and number of edges m, each of the next m lines describes an edge following the format: <src> <dest> <weight>. Node index starts from 1.
-    	<output file>: the path to binary output file
+    	<output file>: the path to binary output file.
 
 2. Run SSA to find the seed sets
 
