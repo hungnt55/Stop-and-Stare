@@ -26,6 +26,7 @@ Use `make' command to compile everything
 How to use:
 --------------------------------------------------------
 This package offers a set of functions to use in order to find a seed set of given size k:
+
 0. (Optional) Computing edge weights (probabilities) as described in the experiments:
 
 	./format <input file> <output file> 1
