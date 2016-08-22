@@ -27,6 +27,7 @@ How to use:
 --------------------------------------------------------
 This package offers a set of functions to use in order to find a seed set of given size k:
 0. (Optional) Computing edge weights (probabilities) as described in the experiments:
+
 	./format <input file> <output file> 1
 
 	<input file>: the path to text file in edge list format with no weights: the first line contains the number of nodes n and number of edges m, each of the next m lines describes an edge following the format: <src> <dest>. Node index starts from 1.
@@ -34,12 +35,14 @@ This package offers a set of functions to use in order to find a seed set of giv
 	The last parameter (1) means the input graph is considered as directed.
 
 1. Conversion from a text format to binary file
+
         	./el2bin <input file> <output file>
 
     	<input file>: the path to text file in weighted edge list format: the first line contains the number of nodes n and number of edges m, each of the next m lines describes an edge following the format: <src> <dest> <weight>. Node index starts from 1.
     	<output file>: the path to binary output file
 
 2. Run SSA to find the seed sets
+
         ./SSA [Options]
         ./DSSA [Options]
 
@@ -73,6 +76,7 @@ This package offers a set of functions to use in order to find a seed set of giv
                 Memory: <peak memory used>
 
 3. (Optional) Verify influence spread of a seed set - returns a (epsilon, 1/n)-estimate of the influence:
+
         ./verifyInf <binary graph file> <seed file> <epsilon> <number of threads> <model: LT or IC>
 
 ********************************************************************************************************
@@ -87,9 +91,11 @@ The sample network network.txt, in this case, contains only 4 nodes and 4 edges 
 		1 4 0.2
 
 	1. Convert to binary file:
+
                 ./el2bin network.txt network.bin
 
         2. Run SSA/DSSA with k=2, epsilon=0.1,delta=0.01:
+ 
                 ./SSA -i network.bin -k 2 -epsilon 0.1 -delta 0.01 -m LT
         The output after running SSA:
 
@@ -102,6 +108,7 @@ The sample network network.txt, in this case, contains only 4 nodes and 4 edges 
         Here, the selected seed set is {1;2} with the estimated influence of 3.10. SSA took 0 second to run and consumed 17.3008 MB of memory.
 
 	3. Verify influence spread with epsilon=0.01, assume that the seed nodes are put in network.seeds:
+
                 ./verifyInf network.bin network.seeds 0.01 1 LT
         The output after running SSA:
 
@@ -110,9 +117,11 @@ The sample network network.txt, in this case, contains only 4 nodes and 4 edges 
 Examples on the billion-scale Twitter network: find seed set of size 100 on Twitter:
 
         1. Convert to binary file: The .bin file and another dataset in edge list format are provided in the following link to save the converting time:
+        
 	https://drive.google.com/folderview?id=0B1c5Sj253lraX2VLZkc5S05Fak0&usp=sharing
 
         2. Run SSA/DSSA with k=100, epsilon=0.1,delta=0.01:
+ 
                 ./SSA -i twitter.bin -k 100 -epsilon 0.1 -delta 0.01 -m LT -o twitter.seeds
         The output after running SSA/DSSA:
 
@@ -122,6 +131,7 @@ Examples on the billion-scale Twitter network: find seed set of size 100 on Twit
 		Memory: 16963.7 MB
 
         3. Verify influence spread with epsilon=0.01, assume that the seed nodes are put in twitter.seeds:
+   
                 ./verifyInf twitter.bin twitter.seeds 0.01 1 LT
         The output after running SSA:
 
