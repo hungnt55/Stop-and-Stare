@@ -31,9 +31,9 @@ This package offers a set of functions to use in order to find a seed set of giv
 
 		./format <input file> <output file> 1
 
-	<input file>: the path to text file in edge list format with no weights: the first line contains the number of nodes n and number of edges m, each of the next m lines describes an edge following the format: <src> <dest>. Node index starts from 1.
-	<output file>: the path to text output file with edge probabilities
-	The last parameter (1) means the input graph is considered as directed.
+       <input file>: the path to text file in edge list format with no weights: the first line contains the number of nodes n and number of edges m, each of the next m lines describes an edge following the format: <src> <dest>. Node index starts from 1.
+       <output file>: the path to text output file with edge probabilities.
+       1: the input graph is considered as directed.
 
 1. Conversion from a text format to binary file
 
@@ -98,6 +98,7 @@ The sample network network.txt, in this case, contains only 4 nodes and 4 edges 
         2. Run SSA/DSSA with k=2, epsilon=0.1,delta=0.01:
  
                 ./SSA -i network.bin -k 2 -epsilon 0.1 -delta 0.01 -m LT
+
         The output after running SSA:
 
             Seed Nodes: 1 2 
@@ -111,6 +112,7 @@ The sample network network.txt, in this case, contains only 4 nodes and 4 edges 
 	3. Verify influence spread with epsilon=0.01, assume that the seed nodes are put in network.seeds:
 
                 ./verifyInf network.bin network.seeds 0.01 1 LT
+                
         The output after running SSA:
 
                 3.10
@@ -124,6 +126,7 @@ Examples on the billion-scale Twitter network: find seed set of size 100 on Twit
         2. Run SSA/DSSA with k=100, epsilon=0.1,delta=0.01:
  
                 ./SSA -i twitter.bin -k 100 -epsilon 0.1 -delta 0.01 -m LT -o twitter.seeds
+                
         The output after running SSA/DSSA:
 
 		Seed Nodes: 1653 1037948 5874844 1811269 5925043 6035057 1022452 1803885 1437 3666322 7877690 3153931 1611 1022172 8308220 1025811 1039591 2581430 10510942 8 15145269 1834246 3620928 1938 22635043 971 4118241 4061596 1829999 1005817 1030336 1685 29745274 1894919 2 11509616 1042616 18831324 6021354 25237289 19874451 4642 16427353 5893972 18817674 32361295 1040848 9022532 20818739 1 19495866 1029853 8348215 5326641 1768479 4062275 1005415 4377946 1030671 4619539 31003592 5380592 22265695 23515823 339 1777545 1768428 5935586 2809 1238699 383 7634442 16016290 33835006 12308758 20329450 20788493 15745580 6259761 31748090 17301 8209508 4070836 1853148 16909 12369660 12835069 4392788 147332 15137140 5299 18455905 4206106 1075246 25135 1003381 19013935 5989290 5307431 3115653 
@@ -134,6 +137,7 @@ Examples on the billion-scale Twitter network: find seed set of size 100 on Twit
         3. Verify influence spread with epsilon=0.01, assume that the seed nodes are put in twitter.seeds:
    
                 ./verifyInf twitter.bin twitter.seeds 0.01 1 LT
+                
         The output after running SSA:
 
                 20727234.45
