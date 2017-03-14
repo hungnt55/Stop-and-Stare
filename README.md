@@ -1,8 +1,8 @@
 Information:
 --------------------------------------------------------
-Version 1.1: Implementations of SSA/D-SSA Algorithms for Influence Maximization and their extensions for Cost-aware Targeted  variants under Independent Cascade(IC) or Linear Threshold(LT) model. For more details about SSA as well as D-SSA, please read our paper:
+Version 2.0: Implementations of the fixed SSA/D-SSA Algorithms for Influence Maximization and their extensions for Cost-aware Targeted  variants under Independent Cascade(IC) or Linear Threshold(LT) model. For more details about SSA as well as D-SSA, please read our paper:
 	
-[H. T. Nguyen, M. T. Thai, and T. N. Dinh, Stop-and-Stare: Optimal Sampling Algorithms for Viral Marketing in Billion-scale Networks , in Proceedings of the ACM SIGMOD International Conference on Management of Data (SIGMOD), 2016.] (http://dl.acm.org/citation.cfm?id=2915207)
+[H. T. Nguyen, M. T. Thai, and T. N. Dinh, Stop-and-Stare: Optimal Sampling Algorithms for Viral Marketing in Billion-scale Networks , in Proceedings of the ACM SIGMOD International Conference on Management of Data (SIGMOD), 2016.] (https://arxiv.org/abs/1605.07990)
 	
 For the Cost-aware Targeted Influence Maximization version, please refer to our another paper:
 
