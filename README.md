@@ -4,7 +4,7 @@ Version 2.0: Implementations of the fixed SSA/D-SSA Algorithms for Influence Max
 	
 [H. T. Nguyen, M. T. Thai, and T. N. Dinh, Stop-and-Stare: Optimal Sampling Algorithms for Viral Marketing in Billion-scale Networks , in Proceedings of the ACM SIGMOD International Conference on Management of Data (SIGMOD), 2016.] (https://arxiv.org/abs/1605.07990)
 	
-For the Cost-aware Targeted Influence Maximization version, please refer to our another paper:
+For the Cost-aware Targeted Influence Maximization version, please refer to our paper:
 
 [H. T. Nguyen, M. T. Thai, and T. N. Dinh, Cost-aware Targeted Viral Marketing in Billion-scale Networks, in Proc. of the IEEE INFOCOM International Conference on Computer Communication, 2016.] (http://dx.doi.org/10.1109/INFOCOM.2016.7524377)
 
@@ -14,8 +14,7 @@ Contact Authors: Hung T Nguyen (hungnt@vcu.edu)
 
 Terms of use:
 --------------------------------------------------------
-The SSA/D-SSA software is released under the MIT license with the details listed in the LICENSE file.
-
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
 
 Requirements:
 --------------------------------------------------------
