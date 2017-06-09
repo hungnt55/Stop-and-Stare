@@ -66,7 +66,7 @@ This package offers a set of functions to use in order to find a seed set of giv
             number of selected seed nodes in the seed set(default: 1)
 
         -epsilon <epsilon value used>
-            epsilon value in (epsilon,delta)-approximation (see our paper for more details, default: 0.1)
+            epsilon value in (epsilon,delta)-approximation (see our paper for more details, default: 0.1, for network with more than 1M nodes, it is recommended to set epsilon = 0.5)
 
         -delta <delta value used>
             delta value in (epsilon,delta)-approximation (default: 1/n)
