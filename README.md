@@ -1,3 +1,4 @@
+# SSA/D-SSA Imfluence Maximization Algorithms
 Information:
 --------------------------------------------------------
 <b>Version 2.1</b>: Update license information.
